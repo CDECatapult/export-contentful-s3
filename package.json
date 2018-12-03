@@ -1,0 +1,25 @@
+{
+  "name": "@dc-website/export-contentful-data",
+  "version": "1.0.0",
+  "description": "Export contenful data to S3",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "sam": "echo '{}' | sam local invoke TestFunction",
+    "lint": "eslint --ext .js ."
+  },
+  "engine": {
+    "node": "6.10.2"
+  },
+  "dependencies": {
+    "contentful-export": "^6.0.4",
+    "envalid": "^4.1.4",
+    "pino": "^4.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3"
+  }
+}
