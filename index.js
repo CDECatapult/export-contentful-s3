@@ -7,9 +7,9 @@ const pino = require('pino')()
 
 const { str } = envalid
 const env = envalid.cleanEnv(process.env, {
-  CF_SPACE_ID: str(),
-  CF_MANAGEMENT_TOKEN: str(),
-  AWS_S3_BUCKET_NAME: str(),
+  CF_SPACE_ID: str({ desc: 'The contentful spaceId.' }),
+  CF_MANAGEMENT_TOKEN: str({ desc: 'The contenful management token.' }),
+  AWS_S3_BUCKET_NAME: str({ desc: 'The name of the S3 bucket.' }),
 })
 
 const s3 = new AWS.S3()
