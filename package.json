@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "sam": "echo '{}' | sam local invoke TestFunction",
-    "lint": "eslint --ext .js ."
+    "lint": "eslint --ext .js .",
+    "test": "ava"
   },
   "engine": {
     "node": "6.10.2"
@@ -17,9 +18,11 @@
     "pino": "^4.13.0"
   },
   "devDependencies": {
+    "ava": "^0.25.0",
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
+    "mock-require": "^3.0.2",
     "prettier": "^1.15.3"
   }
 }
