@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "sam": "echo '{}' | sam local invoke TestFunction",
+    "build": "./build.sh",
     "lint": "eslint --ext .js .",
     "test": "ava"
   },
