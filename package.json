@@ -14,9 +14,9 @@
     "node": "6.10.2"
   },
   "dependencies": {
-    "contentful-export": "^6.0.4",
+    "contentful-export": "^7.4.0",
     "envalid": "^4.1.4",
-    "pino": "^4.13.0"
+    "pino": "^5.9.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",
