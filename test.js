@@ -1,5 +1,4 @@
 const test = require('ava')
-//const { mock } = require('sinon')
 const mock = require('mock-require')
 
 test.cb('export contentful to s3', t => {
@@ -33,9 +32,5 @@ test.cb('export contentful to s3', t => {
 
   handler({}, context)
 
-  //mock(fs, 'readFile').returns(0)
-
-  // cleanup
-  //fs.readFile.restore()
   mock.stopAll()
 })
