@@ -11,7 +11,7 @@
     "test": "ava"
   },
   "engine": {
-    "node": "6.10.2"
+    "node": "8.10.0"
   },
   "dependencies": {
     "contentful-export": "^7.4.0",

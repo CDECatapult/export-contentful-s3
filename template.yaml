@@ -7,6 +7,6 @@ Resources:
   TestFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Runtime: nodejs6.10
+      Runtime: nodejs8.10
       Handler: index.handler
       Timeout: 15
