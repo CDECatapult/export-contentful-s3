@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "sam": "echo '{}' | sam local invoke TestFunction",
+    "sam": "echo '{}' | sam local invoke TestFunction --region eu-west-1",
     "build": "./build.sh",
     "lint": "eslint --ext .js .",
     "test": "ava"
