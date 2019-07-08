@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - contentful-export > lodash:
+        patched: '2019-07-08T04:05:09.751Z'
+    - contentful-export > contentful-batch-libs > lodash:
+        patched: '2019-07-08T04:05:09.751Z'
+    - contentful-export > contentful-management > lodash:
+        patched: '2019-07-08T04:05:09.751Z'
+    - contentful-export > contentful-management > contentful-sdk-core > lodash:
+        patched: '2019-07-08T04:05:09.751Z'
