@@ -8,7 +8,9 @@
     "sam": "echo '{}' | sam local invoke TestFunction --region eu-west-1",
     "build": "./build.sh",
     "lint": "eslint --ext .js .",
-    "test": "ava"
+    "test": "ava",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engine": {
     "node": "8.10.0"
@@ -16,7 +18,8 @@
   "dependencies": {
     "contentful-export": "^7.4.0",
     "envalid": "^4.1.4",
-    "pino": "^5.9.0"
+    "pino": "^5.9.0",
+    "snyk": "^1.231.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",
@@ -26,5 +29,6 @@
     "eslint-plugin-prettier": "^3.0.0",
     "mock-require": "^3.0.2",
     "prettier": "^1.15.3"
-  }
+  },
+  "snyk": true
 }
