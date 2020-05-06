@@ -1,7 +1,7 @@
 const test = require('ava')
 const mock = require('mock-require')
 
-test.cb('export contentful to s3', t => {
+test.cb('export contentful to s3', (t) => {
   t.plan(3)
 
   process.env.CF_SPACE_ID = 'FAKE_SPACE_ID'
@@ -10,12 +10,12 @@ test.cb('export contentful to s3', t => {
 
   const schema = { schema: 'fakeSchema' }
 
-  mock('contentful-export', function() {
+  mock('contentful-export', function () {
     return Promise.resolve(schema)
   })
 
   mock('aws-sdk', {
-    S3: function() {
+    S3: function () {
       return {
         putObject(config) {
           t.is(config.Bucket, 'FAKE_AWS_S3')

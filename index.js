@@ -26,7 +26,7 @@ exports.handler = (event, context) => {
 
   pino.info(`Exporting contenful ${options.spaceId}`)
   spaceExport(options)
-    .then(schema => {
+    .then((schema) => {
       pino.info(`Storing output to ${env.AWS_S3_BUCKET_NAME}/${key}...`)
       s3.putObject(
         {
@@ -44,7 +44,7 @@ exports.handler = (event, context) => {
         }
       )
     })
-    .catch(err => {
+    .catch((err) => {
       pino.error('Error while exporting', err)
       context.done(err)
     })
