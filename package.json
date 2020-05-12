@@ -11,20 +11,20 @@
     "test": "ava"
   },
   "engine": {
-    "node": "8.10.0"
+    "node": "12.16.1"
   },
   "dependencies": {
-    "contentful-export": "^7.4.0",
-    "envalid": "^4.1.4",
-    "pino": "^5.9.0"
+    "contentful-export": "^7.9.12",
+    "envalid": "^6.0.1",
+    "pino": "^6.2.1"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "aws-sdk": "^2.368.0",
-    "eslint": "^5.9.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "mock-require": "^3.0.2",
-    "prettier": "^1.15.3"
+    "ava": "^3.8.1",
+    "aws-sdk": "^2.670.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "mock-require": "^3.0.3",
+    "prettier": "^2.0.5"
   }
 }
